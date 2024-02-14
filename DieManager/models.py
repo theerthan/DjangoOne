@@ -7,8 +7,8 @@ class die(models.Model):
     LaunchDate = models.DateField()
     ExpectedLife = models.IntegerField()
     Product = models.CharField(max_length=150)
-    ActualLife = models.IntegerField(blank=True)
-    DecommisionedOn = models.DateField(blank=True)
+    ActualLife = models.IntegerField(blank=True, null=True)
+    DecommisionedOn = models.DateField(blank=True, null=True)
 
     def __str__(self):
         return Name
