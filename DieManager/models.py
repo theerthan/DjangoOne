@@ -11,4 +11,4 @@ class die(models.Model):
     DecommisionedOn = models.DateField(blank=True, null=True)
 
     def __str__(self):
-        return Name
+        return self.Name
